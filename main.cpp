@@ -6,6 +6,10 @@
     {
     case 1:
       break;
+
+
+    case 2:
+        int a;
     
     default:
       break;
