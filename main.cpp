@@ -1,7 +1,15 @@
 #include <iostream>
 
  int main() {
-    int choice = 1;
+    int choice = 0;
+    switch (choice)
+    {
+    case 1:
+      break;
+    
+    default:
+      break;
+    }
 
 
     return 0;
