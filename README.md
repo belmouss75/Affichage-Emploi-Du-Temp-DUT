@@ -1,1 +1,1 @@
-Hello
+Ce programme en C++ permet de gérer et d'afficher les emplois du temps des différentes filières d'une institution académique. Il est composé de plusieurs classes : Horaire, EmploiDuTemps et Filiere.
