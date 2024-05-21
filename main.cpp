@@ -1,7 +1,7 @@
 #include <iostream>
 
  int main() {
-   std::cout<<"Hello There"<<std::endl;
+    int choice = 0;
 
     return 0;
  }
