@@ -55,6 +55,15 @@ void afficherMenu() {
 
                     }
                     break;
+              case 4:
+                    if(!filiere.vide()){
+                          cout << "Entrez le nom de la filière : ";
+                          cin >> Filierename;
+                          if (filiere.estFilierePresente(Filierename))
+                              timetable.afficher(Filierename);
+                    }
+              break;
+
           }
 
   }
