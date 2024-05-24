@@ -28,7 +28,33 @@ void afficherMenu() {
                   cin >> Filierename;
                   filiere.ajouterFiliere(Filierename);
                   break;
-              
+              case 2:
+                if(!filiere.vide())filiere.afficherFilieres();
+                break;
+              case 3:
+                    if (!filiere.vide())
+                    {
+                      do {
+                          cout << "Entrez le nom de la filière : ";
+                          cin >> Filierename;
+                          if (!filiere.estFilierePresente(Filierename)) cout << "Filière non trouvée !!" << endl;
+                      } while (!filiere.estFilierePresente(Filierename));
+                      cout << "Entrez le jour : ";
+                      cin >> day;
+                      cout << "Entrez l'heure de début (HH:MM) : ";
+                      cin >> start_time;
+                      cout << "Entrez l'heure de fin (HH:MM) : ";
+                      cin >> end_time;
+                      cout << "Entrez le sujet : ";
+                      cin >> subject;
+                      cout << "Entrez le nom du professeur : ";
+                      cin >> prof;
+                      cout << "Entrez le nom de la salle : ";
+                      cin >> salle;
+                      timetable.ajouterHoraire(day, Horaire(Filierename, start_time + " - " + end_time, subject, "Pr-" + prof, salle));
+
+                    }
+                    break;
           }
 
   }
